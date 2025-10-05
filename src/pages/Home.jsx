@@ -21,7 +21,8 @@ export const Home = () => {
             <button type='submit' > search </button>
         </form>
         <div className='movies-grid'>
-            {movies.map(movie => movie.title.toLowerCase().startsWith(searchQuery) && (<MovieCard movie={movie} key={movie.id}/>))}
+            {
+            (<MovieCard movie={movies} key={movies.id}/>)}
         </div>
     </div>
   )
