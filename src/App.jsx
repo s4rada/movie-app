@@ -4,6 +4,8 @@ import NavBar from './components/NavBar';
 import Favorite from './pages/Favorite';
 import { Home } from './pages/Home';
 import {Routes, Route} from "react-router-dom"
+import "../src/css/App.css";
+
 function App() {
 
   return (
