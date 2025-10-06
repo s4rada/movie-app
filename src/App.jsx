@@ -2,9 +2,10 @@ import './App.css'
 import MovieCard from './components/MovieCard'
 import NavBar from './components/NavBar';
 import Favorite from './pages/Favorite';
-import { Home } from './pages/Home';
+
 import {Routes, Route} from "react-router-dom"
 import "../src/css/App.css";
+import Home from './pages/Home';
 
 function App() {
 
