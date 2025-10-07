@@ -29,6 +29,7 @@ const Home = () => {
         try{
             const searchResults = await searchMovies(searchQuery)
             setMovies(searchResults)
+            setError(null)
         }
         catch(err){
             console.log(err)
@@ -36,8 +37,11 @@ const Home = () => {
         } finally {
             setLoading(false)
         }
-        searchResults()
+        
+        searchResults("")
     };
+
+
   return (
     <div className='home'>
         <form action="" className='search-form' onSubmit={handleSearch}>
